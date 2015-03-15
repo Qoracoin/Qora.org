@@ -1,0 +1,143 @@
+.home-block {
+  text-align: center;
+  padding: 40px;
+
+  @media only screen and (max-width: 420px) {
+    padding: 20px;
+  }
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #050025;
+  color: white;
+
+  #description {
+    font-family: @os-family;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    div {
+      padding: 4px;
+    }
+  }
+
+  #features {
+
+    .col {
+      margin: 0px;
+      position: relative;
+    }
+
+    .feature
+    {
+      display: inline-block;
+      width: 112px;
+
+      .feature-image
+      {
+        position: relative;
+        height: 152px;
+        max-width: 112px;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          bottom: auto;
+          left: 0;
+        }
+      }
+
+      .feature-image:hover {
+        img {
+          top: auto;
+          bottom: 0;
+        }
+      }
+    }
+
+    .feature-seperator {
+      position: absolute;
+      top: 42px;
+      right: 0px;
+      margin-right: -6px;
+    }
+
+    @media only screen and (max-width: 920px) {
+      .feature-seperator {
+        display: none;
+      }
+    }
+  }
+
+  #feature-description {
+    font-family: @os-family;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+/* DOWNLOADS */
+
+#downloads {
+  background-color: #4440C0;
+  color: white;
+
+  #download-links {
+    margin-top: 30px;
+
+    a {
+      display: inline-block;
+      position: relative;
+      height: 64px;
+      width: 256px;
+      overflow: hidden;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      @media only screen and (max-width: 420px) {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        bottom: auto;
+        left: 0;
+      }
+    }
+
+    a:hover {
+      img {
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+/* RESOURCES */
+
+#resources {
+  #resource-links {
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    .col {
+      margin: 0px;
+    }
+
+    a, a:visited {
+      display: block;
+      font-family: @robo-family;
+      font-size: 16px;
+      color: #4440C0;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}
